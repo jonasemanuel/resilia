@@ -1,0 +1,37 @@
+.App {
+  max-width: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+input {
+  height: 40px;
+  border-radius: 9px;
+  border: 1px solid #afafaf;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  height: 40px;
+  width: 170px;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #a5a5a5;
+  border-radius: 6px;
+}
