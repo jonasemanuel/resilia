@@ -1,0 +1,20 @@
+nav {
+  background: #219154;
+  width: 100vw;
+  height: 45px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+nav img {
+  width: 4%;
+  height: auto;
+}
+
+nav .actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
