@@ -1,0 +1,11 @@
+.home {
+  margin: 0 auto;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.home h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}

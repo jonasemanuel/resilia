@@ -1,0 +1,98 @@
+.App {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 0;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.pokemon-search-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-with-button {display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.input-with-button input {
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px 0 0 10px;
+  flex: 1;
+  border: 1px solid #84848491;
+  font-size: 20px;
+}
+
+.input-with-button button {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-top: 1px solid;
+  border-left: 0;
+  border-radius: 0px 10px 10px 0;
+  border: 1px solid #84848491;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.pokemons-container {
+  margin-top: 30px;
+}
+
+.pokemon {
+  border: 1px solid #c3c3c3;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 10px;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.pokemon:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s linear;
+}
+
+.pokemon-info {
+  text-align: center;
+  border-right: 1px solid #c3c3c3;
+}
+
+.pokemon-info h2 {
+  text-transform: capitalize;
+}
+
+.pokemon-info .pokemon-image {
+  margin: 0 30px 0 30px;
+}
+
+.pokemon-image img {
+  width: 15em;
+}
+
+.pokemon-details {
+  flex: 1;
+}
