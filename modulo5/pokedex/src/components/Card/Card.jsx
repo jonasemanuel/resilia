@@ -5,6 +5,7 @@ import './Card.css'
 
 export const Card = ({ name, image }) => {
   const { myPokemons, setMyPokemons } = useContext(Context)
+  
   return (
     <div className="card">
       <div className="name">{name}</div>

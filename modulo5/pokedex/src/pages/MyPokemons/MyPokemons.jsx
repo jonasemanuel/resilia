@@ -1,3 +1,12 @@
+import { useContext } from "react";
+import { Context } from "../../context/Context";
+
 export const MyPokemons = () => {
-  return <h1>My Pokemons</h1>
+  const { myPokemons } = useContext(Context)
+
+  return (
+    <ul>
+      {myPokemons.map(item => <li>{item.name}</li>)}
+    </ul>
+  )
 }
