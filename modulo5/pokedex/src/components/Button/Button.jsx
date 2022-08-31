@@ -1,5 +1,5 @@
-import style from './Button.css'
+import './Button.css'
 
 export const Button = (props) => {
-  return <button className={style.button}>{props.label}</button>
+  return <button onClick={props.onClick} className="btn">{props.label}</button>
 }

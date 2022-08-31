@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from "react"
 import { CardsContainer } from "../../components/CardsContainer/CardsContainer"
 import { pokeDex } from "../../services/pokedex"
 import './Home.css'
-import axios from 'axios';
+import { Context } from "../../context/Context";
 
 export const Home = () => {
-
   const [pokemons, setPokemons] = useState([])
+  const { myPokemons } = useContext(Context)
 
   const getPokemons = async () => {
     const { results } = await pokeDex()
@@ -28,6 +28,7 @@ export const Home = () => {
     <main className="home-container">
       <h1>Pokedex</h1>
       <CardsContainer items={pokemons} />
+      {myPokemons.map(item => <span>{item.name}</span>)}
     </main>
   )
 }
