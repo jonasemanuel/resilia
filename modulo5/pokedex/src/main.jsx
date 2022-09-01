@@ -8,6 +8,7 @@ import { MyPokemons } from './pages/MyPokemons/MyPokemons'
 
 import './index.css'
 import { Provider } from './context/Provider'
+import { Pokemon } from './pages/Pokemon/Pokemon'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/meus-pokemons' element={<MyPokemons />} />
+          <Route path='/pokemon/:pokemonName' element={<Pokemon />} />
         </Routes>
       </BrowserRouter>
     </Provider>
